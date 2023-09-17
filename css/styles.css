@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+button,
+input,
+textarea {
+  font-family: "Heebo", sans-serif;
+}
+
+body {
+  background-color: #e5e2e2;
+}
+header {
+  background-color: #f1f0f0;
+  height: 80px;
+}
+header #navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 80px;
+}
+
+header #navbar .nav-brand {
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #494848;
+}
+header #navbar .nav-list {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  list-style: none;
+}
+header #navbar .nav-list .nav-items a {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 18px;
+  color: #494848;
+}
+header #navbar .nav-list .nav-items a:hover {
+  color: #777;
+  transition: 0.3s;
+}
+header #navbar .menu {
+  width: 30px;
+  height: 30px;
+  display: none;
+}
+
+@media (max-width: 700px) {
+  header #navbar .menu {
+    display: block;
+  }
+  header #navbar .nav-list .nav-items a {
+    display: none;
+  }
+}
+
+main {
+  margin-top: 1rem;
+}
+
+main #banner {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  margin-top: 60px;
+}
+@media (max-width: 920px) {
+  main #banner {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 10px;
+  }
+  main #banner .banner-content {
+    text-align: center;
+  }
+}
+main #banner .banner-content .banner-title {
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 60px;
+  margin-bottom: 40px;
+}
+main #banner .banner-content .banner-subtitle {
+  font-size: 1rem;
+  font-weight: 30px;
+  line-height: 25px;
+  max-width: 600px;
+  margin-bottom: 30px;
+}
+main #banner .banner-content .banner-button {
+  background-color: rgb(23, 178, 195);
+  color: #e5e2e2;
+  font-size: 20px;
+  font-weight: 500px;
+  padding: 8px 24px;
+  border: none;
+}
+main #banner .banner-image {
+  width: 50%;
+  max-width: 300px;
+}
+main #post {
+  margin-top: 50px;
+  background-color: rgb(204, 229, 229);
+}
+main #post .post-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+main #post .post-content .post-content-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+main #post .post-content .post-content-header .section-title {
+  font-size: 22px;
+  font-weight: 100px;
+}
+main #post .post-content .post-content-header .view-all {
+  text-decoration: none;
+  color: rgb(19, 181, 214);
+}
+main #post .post-content .post-cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  gap: 20px;
+}
+main #post .post-content .post-cards .post-card {
+  background-color: #e5e2e2;
+  padding: 2rem;
+  margin-bottom: 20px;
+}
+main #post .post-content .post-cards .post-card h3 {
+  font-size: 23px;
+  font-weight: 700px;
+  margin-bottom: 30px;
+}
+/* é preciso por o display block para ativar as funções de formatações do span, uma vez que ele é um alinhamento */
+main #post .post-content .post-cards .post-card span {
+  font-size: 16px;
+  font-weight: 400px;
+  margin-bottom: 20px;
+  display: block;
+}
+main #post .post-content .post-cards .post-card p {
+  font-size: 16px;
+  font-weight: 200px;
+}
+@media (max-width: 920px) {
+  main #post .post-content .post-cards {
+    flex-direction: column;
+  }
+}
